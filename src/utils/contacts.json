@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "avatar_url": "https://picsum.photos/200",
+    "first_name": "John",
+    "last_name": "Doe",
+    "company": "Doe Inc.",
+    "details": "John Doe is a software engineer with over 10 years of experience in full-stack development.",
+    "email": "john.doe@example.com",
+    "phone": {
+      "area_code": "123",
+      "number": "4567890"
+    },
+    "addresses": [
+      {
+        "line_1": "123 Main St",
+        "line_2": "Apt 4B",
+        "zip_code": "10001",
+        "city_id": 1,
+        "state_id": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "avatar_url": "https://picsum.photos/200",
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "company": "Smith & Co.",
+    "details": "Jane Smith is a project manager who specializes in Agile methodologies.",
+    "email": "jane.smith@example.com",
+    "phone": {
+      "area_code": "456",
+      "number": "1234567"
+    },
+    "addresses": [
+      {
+        "line_1": "456 Elm St",
+        "line_2": null,
+        "zip_code": "90210",
+        "city_id": 2,
+        "state_id": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "avatar_url": "https://picsum.photos/200",
+    "first_name": "Michael",
+    "last_name": "Johnson",
+    "company": "Tech Innovators",
+    "details": "Michael is a senior developer specializing in cloud solutions.",
+    "email": "michael.johnson@example.com",
+    "phone": {
+      "area_code": "789",
+      "number": "0987654"
+    },
+    "addresses": [
+      {
+        "line_1": "789 Oak St",
+        "line_2": "Suite 10",
+        "zip_code": "30301",
+        "city_id": 3,
+        "state_id": 3
+      }
+    ]
+  }
+]
