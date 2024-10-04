@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "avatar_url": "https://picsum.photos/200",
+    "avatar_url": "https://avatar.iran.liara.run/public",
     "first_name": "John",
     "last_name": "Doe",
     "company": "Doe Inc.",
@@ -23,7 +23,7 @@
   },
   {
     "id": 2,
-    "avatar_url": "https://picsum.photos/200",
+    "avatar_url": "https://avatar.iran.liara.run/public",
     "first_name": "Jane",
     "last_name": "Smith",
     "company": "Smith & Co.",
@@ -45,7 +45,7 @@
   },
   {
     "id": 3,
-    "avatar_url": "https://picsum.photos/200",
+    "avatar_url": "https://avatar.iran.liara.run/public",
     "first_name": "Michael",
     "last_name": "Johnson",
     "company": "Tech Innovators",

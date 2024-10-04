@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { findById, truncate } from "../utils/functions";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const contactsToDisplayMemo = (contacts, cities, states) => {
   return contacts.map((contact) => ({
@@ -71,7 +71,7 @@ const ContactsScreen = ({ contacts, cities, states }) => {
           <div key={contact.id} className="flex flex-col gap-3 pb-2 border-b">
             <div className="flex flex-col items-center">
               <img
-                src={contact.avatar_url}
+                src={`${contact.avatar_url}/${contact.id}`}
                 alt="Contact Avatar"
                 className="max-w-52 max-h-52"
               />
