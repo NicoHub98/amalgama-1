@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <h1 className="flex flex-col justify-center items-center w-full min-h-screen">
-        {/* Amalgama ejercicio 1 */}
         <Routes>
           <Route
             path="/"

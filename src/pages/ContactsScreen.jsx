@@ -29,28 +29,8 @@ const ContactsScreen = ({ contacts, cities, states }) => {
     [contacts, cities, states]
   );
 
-  const handleNavigate = (
-    id,
-    avatar,
-    full_name,
-    company,
-    details,
-    email,
-    phone_number,
-    addresses
-  ) => {
-    navigate(`/perfil/${id}`, {
-      state: {
-        id,
-        avatar,
-        full_name,
-        company,
-        details,
-        email,
-        phone_number,
-        addresses,
-      },
-    });
+  const handleNavigate = (contact) => {
+    navigate(`/perfil/${contact.id}`, { state: contact });
   };
 
   return (
@@ -58,10 +38,10 @@ const ContactsScreen = ({ contacts, cities, states }) => {
       <nav className="items-center">
         <ul className="flex flex-row justify-center gap-10">
           <li>
-            <a href="/home">Home</a>
+            <a>Home</a>
           </li>
           <li>
-            <a href="/contacts">My Contacts</a>
+            <a>My Contacts</a>
           </li>
         </ul>
       </nav>
@@ -102,18 +82,7 @@ const ContactsScreen = ({ contacts, cities, states }) => {
               </li>
             </ul>
             <button
-              onClick={() =>
-                handleNavigate(
-                  contact.id,
-                  contact.avatar_url,
-                  contact.full_name,
-                  contact.company,
-                  contact.details,
-                  contact.email,
-                  contact.phone_number,
-                  contact.addresses
-                )
-              }
+              onClick={() => handleNavigate(contact)}
               className="w-fit bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-all"
             >
               Ver Perfil
