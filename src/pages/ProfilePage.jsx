@@ -15,20 +15,20 @@ const ProfilePage = () => {
           className="w-52 h-52"
         />
       </div>
-      <div className="flex flex-col gap-1 border rounded-md p-2 m-2">
-        <p>{contact.company}</p>
-        <p>{contact.details}</p>
-        <p>{contact.email}</p>
-        <p>{contact.phone_number}</p>
-        <p>
+      <ul className="flex flex-col gap-1 border rounded-md p-2 m-2">
+        <li>{contact.company}</li>
+        <li>{contact.details}</li>
+        <li>{contact.email}</li>
+        <li>{contact.phone_number}</li>
+        <li>
           {contact.addresses.map(
             (address) =>
               `${address.line_1} ${address.line_2 ? address.line_2 : ""} ${
                 address.zip_code
               } ${address.city} ${address.state}`
           )}
-        </p>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 };
